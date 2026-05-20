@@ -46,13 +46,7 @@
 </head>
 
 <body class="secboybg">
-  <!-- Loader -->
-  <div id="pageloader">
-    <div class="loader-box">
-      <img src="images/gymloder.png" alt="Loading..." class="loader-gif">
-      <h5 class="text-center">Loading...</h5>
-    </div>
-  </div>
+
 
   <!-- logo -->
   <div class="container py-4 text-center">
@@ -426,9 +420,10 @@
   <script src="js/settings.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    AOS.init({
-        once: true /* एनिमेशन सिर्फ एक बार होगा जब यूजर स्क्रॉल करके आएगा */
-    });
+ AOS.init({
+    duration: 300,
+    once: true    
+});
 </script>
   <script>
     $(document).ready(function () {
@@ -477,14 +472,6 @@
     });
   </script>
 
-  <script>
-    // loder-start
-    window.addEventListener("load", function () {
-      document.getElementById("pageloader").style.display = "none";
-    });
-    // loder-end
-
-  </script>
 
 
   <!-- mouse hover imge -->
