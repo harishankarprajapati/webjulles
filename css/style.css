@@ -1,0 +1,970 @@
+
+/* new */
+.secboybg {
+  background: #FFF9E5;
+}
+/* Hero Image Wrapper for Floating Effect */
+.hero-image-anim-wrap {
+    animation: floatMotion 4s ease-in-out infinite;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Smooth Floating Animation Keyframes */
+@keyframes floatMotion {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px); /* इमेज धीरे से 12px ऊपर जाएगी */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Hover Effect on Text: हल्का सा इंटरैक्शन */
+.secwetext {
+    transition: color 0.3s ease;
+}
+.secwetext:hover {
+    color: #12211a; /* हल्का डार्क शेड या जो भी आपके ब्रांड का प्राइमरी कलर हो */
+}
+/* Card Layout Polish */
+.seccolbg {
+    transition: transform 0.3s ease;
+}
+
+/* पॉइंट पर माउस ले जाने पर हल्का सा ऊपर उठने का इफेक्ट */
+.seccolbg:hover {
+    transform: translateY(-3px);
+}
+
+.seccolbg p {
+    transition: color 0.3s ease;
+}
+
+/* होवर करने पर टेक्स्ट का कलर चेंज */
+.seccolbg:hover p {
+    color: #a37a3e; /* प्रीमियम मैटेलिक गोल्ड टोन */
+}
+
+/* बॉर्डर लाइन एनिमेशन */
+hr.sechrbg {
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.seccolbg:hover hr.sechrbg {
+    border-color: #cca662; /* लाइन भी गोल्ड हो जाएगी */
+    opacity: 0.8;
+}
+/* --- Solution & Problem Blocks Polish --- */
+.secintbg {
+  list-style: none; /* डिफ़ॉल्ट गंदे बुलेट पॉइंट्स हटाने के लिए */
+  padding-left: 20px;
+}
+
+.secintbg li {
+  position: relative;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+/* कस्टमाइज्ड बुलेट डॉट्स */
+.secintbg li::before {
+  content: "•";
+  position: absolute;
+  left: -20px;
+  font-size: 24px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Fail लिस्ट के लिए कस्टमाइज्ड कलर इफ़ेक्ट */
+.custom-list-fail li::before {
+  color: #8b0000; /* डार्क रेड/मरून डॉट */
+}
+
+/* Success/Solution लिस्ट के लिए गोल्ड कलर इफ़ेक्ट */
+.custom-list-success li::before {
+  color: #cca662; /* प्रीमियम गोल्ड डॉट */
+}
+
+.gold-highlight-title {
+  color: #a37a3e !important; /* Solution हेडिंग को गोल्ड टच */
+}
+
+/* होवर करने पर लिस्ट आइटम थोड़ा आगे खिसकेगा और चमकेगा */
+.secintbg li:hover {
+  transform: translateX(5px);
+  color: #000;
+}
+
+.custom-list-success li:hover {
+  color: #a37a3e; /* सोल्यूशन टेक्स्ट होवर पर गोल्ड होगा */
+}
+
+.secintbg li:hover::before {
+  transform: scale(1.3); /* डॉट थोड़ा बड़ा होगा */
+}
+
+/* इमेज होवर इफ़ेक्ट */
+.solution-img-wrap {
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+}
+
+.solution-img-wrap:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(163, 122, 62, 0.15); /* हल्का गोल्ड ग्लो */
+}
+
+.solution-img-wrap img {
+  transition: transform 0.5s ease;
+}
+
+.solution-img-wrap:hover img {
+  transform: scale(1.05); /* इमेज के अंदर ज़ूम इफ़ेक्ट */
+}
+/* --- Methodology Cards Custom Effects --- */
+.methodology-card {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+  position: relative;
+  background: #ffffff;
+}
+
+/* कार्ड होवर: हल्का सा ऊपर उठना और सॉफ्ट गोल्ड ग्लो शैडो */
+.methodology-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(163, 122, 62, 0.12);
+}
+
+/* इमेज बॉक्स के अंदर ज़ूम इफ़ेक्ट */
+.card-img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-box img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* माउस ले जाने पर इमेज का धीरे से अंदर ज़ूम होना */
+.methodology-card:hover .card-img-box img {
+  transform: scale(1.06);
+}
+
+/* कार्ड का टाइटल होवर इफेक्ट */
+.card-content h3 {
+  transition: color 0.3s ease;
+}
+
+.methodology-card:hover .card-content h3 {
+  color: #a37a3e; /* होवर करने पर हेडिंग का कलर गोल्ड होगा */
+}
+
+/* छोटा सा डेकोरेटिव बॉटम बार जो होवर पर दिखेगा */
+.methodology-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #a37a3e, #cca662);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.methodology-card:hover::after {
+  width: 100%; /* होवर पर पूरी पट्टी नीचे गोल्ड हो जाएगी */
+}
+/* --- Horizontal Layout & Scroll Fix --- */
+
+
+.custom-about-section {
+  overflow: hidden; /* ताकि कोई भी एनिमेटेड एलिमेंट स्क्रीन से बाहर स्क्रॉल बार न बनाए */
+}
+
+/* --- Pure CSS Entrance Keyframes --- */
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px); /* 60px लेफ्ट से शुरू होगा */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px); /* 60px राइट से शुरू होगा */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --- एनिमेशन अप्लाई करना --- */
+.animate-left-box {
+  animation: slideFromLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-right-box {
+  animation: slideFromRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* --- वीडियो थंबनेल और प्ले बटन इफेक्ट्स --- */
+.video-thumbnail-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.video-thumbnail-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-video-img {
+  transition: transform 0.6s ease;
+}
+
+.video-thumbnail-container:hover .about-video-img {
+  transform: scale(1.05);
+}
+
+/* प्ले बटन रिपल/वेव एनीमेशन */
+.animated-pulse-btn {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.animated-pulse-btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  z-index: -1;
+  animation: playWave 2s infinite ease-out;
+}
+
+@keyframes playWave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.video-thumbnail-container:hover .animated-pulse-btn {
+  background-color: #cca662; /* होवर पर बटन का रंग गोल्ड */
+}
+
+.video-thumbnail-container:hover .animated-pulse-btn svg path {
+  fill: #ffffff; /* एरो वाइट हो जाएगा */
+}
+
+/* --- मोबाइल रिस्पॉन्सिव रिफाइनमेंट --- */
+@media (max-width: 768px) {
+  .video-thumbnail-container {
+    border-radius: 20px;
+  }
+  .animate-left-box, .animate-right-box {
+    animation-duration: 1s; /* मोबाइल पर थोड़ा तेज़ लोड होगा */
+  }
+}
+
+.secflt {
+  display: flex;
+  align-items: center;
+}
+
+.secwetext {
+  font-family: "Playfair Display";
+  font-size: 43px;
+  font-weight: 500;
+  color: #000;
+}
+
+.secherimg {
+  border-radius: 35px;
+}
+
+.sectext2 p {
+  font-size: "Euclid Circular A";
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.secbtn {
+  padding-top: 30px;
+}
+
+.header-btn2 {
+  background-image: url(../images/btnhover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  font-size: "Euclid Circular A";
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Inter';
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s ease;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-btn2:hover {
+  background:
+    radial-gradient(circle at center, #ffdd88 0%, #d4af37 40%, #b8860b 70%, #8b6508 100%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.2));
+  background-blend-mode: overlay;
+  color: #000;
+}
+
+.seccaltext a {
+  font-size: "Euclid Circular A";
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+.seccaltext a:hover {
+  color: #E0B058;
+}
+
+.painsectext {
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+}
+
+.secpainbg {
+  padding: 30px 10px;
+}
+
+.secimg2new {
+  padding-top: 20px;
+  border-radius: 50px;
+}
+
+.seccolbg {
+  padding: 15px;
+}
+
+.seccolbg p {
+  font-family: "Playfair Display";
+  font-size: 25px;
+  color: #000;
+}
+
+hr.sechrbg {
+  opacity: 1;
+  border: 1px solid #00000036;
+}
+
+.painsectext2 {
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.secditext {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 50px;
+  color: #000;
+}
+
+.secintbg {
+  padding-top: 20px;
+}
+
+.secintbg li {
+  font-family: "Euclid Circular A";
+  font-size: 22px;
+}
+
+.secbobg {
+  border-radius: 30px;
+}
+
+.secpainbg2 {
+  padding: 50px 10px;
+}
+
+.secpainbg3 {
+  padding: 70px 10px;
+}
+
+.secpainbg3 {
+  padding: 60px 20px;
+}
+
+.methodology-title {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.methodology-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-box {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.card-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 30px 20px;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 28px;
+  font-family: "Euclid Circular A";
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #4a4a4a;
+  font-family: "Euclid Circular A";
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-section-wrapper {
+  border-radius: 20px;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-text-col {
+  padding-right: 20px;
+}
+
+.about-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.8rem;
+  color: #000000;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.about-desc {
+  font-size: 1.05rem;
+  color: #2b2b2b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-desc a {
+  color: #2b2b2b;
+  text-decoration: underline;
+}
+
+.video-thumbnail-container {
+  position: relative;
+  width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.video-thumbnail-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.video-play-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.video-play-btn svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+}
+
+.video-thumbnail-container:hover .video-play-btn {
+  transform: scale(1.1);
+}
+
+
+/* Testimonials */
+.testimonial-section {
+  font-family: 'Arial', sans-serif;
+}
+
+.testimonial-main-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.8rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.testimonial-content-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+
+.client-name {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 2px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.client-handle {
+  font-size: 0.85rem;
+  color: #555555;
+  display: block;
+}
+
+.testimonial-slider .owl-dots {
+  margin-top: 40px !important;
+}
+
+.testimonial-slider .owl-dots .owl-dot {
+  width: 40px !important;
+  height: 3px !important;
+  background: #d1c9b7 !important;
+  border-radius: 0px !important;
+  transition: all 0.3s ease;
+}
+
+.testimonial-slider .owl-dots .owl-dot.active,
+.testimonial-slider .owl-dots .owl-dot:hover {
+  background: #555555 !important;
+}
+
+/* Section Main Background */
+.intro-offers-section {
+  background-color: #1f5e43;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  margin: 0 !important;
+}
+.testimonial-slider .owl-nav.disabled {
+    display: none;
+}
+.offers-main-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.offer-card {
+  background-color: #e5b364;
+  color: #000000;
+  padding: 50px 30px;
+  height: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.offer-badge {
+  position: absolute;
+  top: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  letter-spacing: 1px;
+}
+
+.offer-price {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.offer-text {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.contact-gold-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #a37a3e 0%, #cca662 50%, #a37a3e 100%);
+  color: #000000 !important;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 12px 35px;
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contact-gold-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.limited-spaces-text {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+
+/* Background & Font Base */
+.faq-section {
+  background-color: #fbf6e6;
+  font-family: 'Arial', sans-serif;
+}
+
+.faq-main-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  color: #12211a;
+  font-weight: 500;
+}
+
+.faq-accordion-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border-left: 3px solid #e5b364;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.faq-header {
+  padding: 22px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.faq-icon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.faq-icon::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 2px;
+  background-color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 14px;
+  background-color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-body {
+  display: none;
+  /* डिफ़ॉल्ट रूप से बंद रखने के लिए */
+  padding: 0 25px 22px 25px;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Footer Fluid Main Wrapper */
+.footer-section-fluid {
+  background-color: #1f5e43;
+  /* इमेज का डार्क ग्रीन बैकग्राउंड */
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo Box Tuning */
+.footer-logo-box {
+  max-width: 280px;
+  /* लोगो का साइज एडजस्ट करने के लिए */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-logo-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bottom Metallic Gold Strip */
+.footer-bottom-gold-bar {
+  width: 100%;
+  height: 8px;
+  /* पट्टी की मोटाई */
+  background: linear-gradient(90deg, #a37a3e 0%, #cca662 50%, #a37a3e 100%);
+  /* हॉरिजॉन्टल मैटेलिक गोल्ड */
+}
+
+
+
+/* ==========================================================================
+   1. DESKTOP STYLES (आपके ओरिजिनल स्टाइल्स क्लीन किए हुए)
+   ========================================================================== */
+.secboybg {
+  background: #FFF9E5;
+}
+
+.secflt {
+  display: flex;
+  align-items: center;
+}
+
+.secwetext {
+  font-family: "Playfair Display", serif;
+  font-size: 43px;
+  font-weight: 500;
+  color: #000;
+}
+
+.secherimg {
+  border-radius: 35px;
+  max-width: 100%;
+  height: auto;
+}
+
+.sectext2 p {
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.secbtn {
+  padding-top: 30px;
+}
+
+.header-btn2 {
+  background-image: url(../images/btnhover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s ease;
+  display: inline-block;
+}
+
+.header-btn2:hover {
+  background:
+    radial-gradient(circle at center, #ffdd88 0%, #d4af37 40%, #b8860b 70%, #8b6508 100%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.2));
+  background-blend-mode: overlay;
+  color: #000;
+}
+
+.seccaltext a {
+  font-family: "Euclid Circular A", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+.seccaltext a:hover {
+  color: #E0B058;
+}
+
+.painsectext {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+}
+
+.secpainbg {
+  padding: 30px 10px;
+}
+
+.secimg2new {
+  padding-top: 20px;
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.seccolbg {
+  padding: 15px;
+}
+
+.seccolbg p {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  color: #000;
+}
+
+hr.sechrbg {
+  opacity: 1;
+  border: 1px solid #00000036;
+}
+
+.painsectext2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.secditext {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #000;
+}
+
+.secintbg {
+  padding-top: 20px;
+}
+
+.secintbg li {
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 22px;
+}
+
+.secbobg {
+  border-radius: 30px;
+}
+
+.secpainbg2 {
+  padding: 50px 10px;
+}
+
+.secpainbg3 {
+  padding: 60px 20px;
+}
+

@@ -1,0 +1,242 @@
+/* -------1920--------- */
+@media only screen and (min-width:1920px) {
+  .container-fluid {
+    width: 1904px;
+    margin: auto;
+  }
+
+  .nav-bokbtn {
+    padding-right: 20px;
+  }
+
+  .secimgmaa {
+    margin-top: -803px !important;
+    z-index: 99;
+    position: relative;
+
+  }
+}
+
+/* -------1400px--------- */
+@media only screen and (min-width:1400px) {
+
+  .new-pet {
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width:1400px) {
+
+  .new-pet {
+    margin-right: 10%;
+  }
+}
+
+/* ==========================================================================
+   MASTER RESPONSIVE MEDIA QUERY (FOR MOBILE & TABLETS)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  /* --- Global & Base Layout Fixes --- */
+  .secflt {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .secrenbg {
+    flex-direction: column-reverse; 
+  }
+
+  /* --- Headings & Typography --- */
+  .secwetext,
+  .painsectext {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .secwetext {
+    padding-top: 20px;
+  }
+
+  .secditext {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .painsectext2 {
+    font-size: 26px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .sectext2 p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .seccolbg p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* --- Lists & Elements --- */
+  .secintbg li {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  hr.sechrbg {
+    margin: 0px !important;
+  }
+
+  /* --- Spacing & Paddings --- */
+  .secpadbg {
+    padding: 10px !important;
+  }
+
+  .secpainbg,
+  .secpainbg2,
+  .secpainbg3 {
+    padding: 30px 15px !important;
+  }
+
+  /* --- Buttons --- */
+  .header-btn2 {
+    font-size: 15px !important; 
+    padding: 10px 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .secbtn {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .seccaltext a {
+    font-family: "Euclid Circular A", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  /* --- Images --- */
+  .secherimg,
+  .secimg2new {
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+
+  /* --- Methodology Section --- */
+  .methodology-title {
+    font-size: 2rem;
+  }
+
+  .card-content {
+    padding: 20px 15px;
+  }
+
+  .card-content h3 {
+    font-size: 20px;
+  }
+
+  /* --- About Khadijah Section --- */
+  .about-section-wrapper {
+    padding: 30px 20px;
+  }
+
+  .about-text-col {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .video-thumbnail-container {
+    border-radius: 25px;
+  }
+
+  .video-play-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .video-play-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* --- Testimonials Section --- */
+  .testimonial-main-title {
+    font-size: 2.2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  /* --- Intro Offers Section --- */
+  .offers-main-title {
+    font-size: 2.2rem;
+  }
+
+  .offer-card {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .offer-price {
+    font-size: 1.8rem;
+  }
+
+  .offer-text {
+    font-size: 1rem;
+  }
+
+  .contact-gold-btn {
+    width: 100%;
+    max-width: 340px;
+    font-size: 1rem;
+  }
+
+  /* --- FAQ's Section --- */
+  .faq-main-title {
+    font-size: 2.2rem;
+  }
+
+  .faq-header {
+    padding: 16px 18px;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-body {
+    padding: 0 18px 18px 18px;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+
+  /* --- Footer Section --- */
+  .footer-logo-box {
+    max-width: 200px;
+  }
+
+  .footer-bottom-gold-bar {
+    height: 6px;
+  }
+
+}

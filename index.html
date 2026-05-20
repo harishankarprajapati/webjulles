@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- owl carousel 2 effects animation- -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Onest:wght@100..900&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=PT+Sans+Caption:wght@400;700&family=Parisienne&family=Phetsarath:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Racing+Sans+One&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Onest  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Onest:wght@100..900&family=Oswald:wght@200..700&family=Oxanium:wght@200..800&family=PT+Sans+Caption:wght@400;700&family=Parisienne&family=Phetsarath:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Racing+Sans+One&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+
+
+  <link rel="icon" href="images/fav-icon.png">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="secboybg">
+  <!-- Loader -->
+  <div id="pageloader">
+    <div class="loader-box">
+      <img src="images/gymloder.png" alt="Loading..." class="loader-gif">
+      <h5 class="text-center">Loading...</h5>
+    </div>
+  </div>
+
+  <!-- logo -->
+  <div class="container py-4 text-center">
+    <img src="images/main-logo.png" class="img-fluid" alt="">
+  </div>
+
+  <!-- hero -->
+ <div class="container py-5 secpadbggit init">
+    <div class="row secrenbg align-items-center">
+        
+        <div class="col-md-8 secflt" data-aos="fade-right" data-aos-duration="1200">
+            <p class="secwetext">
+                We have worked with thousands of women to relieve their pains and reclaim their lives by 
+                improving their movement and overall health. We trained more than 50 women in Kuwait to 
+                become internationally certified Pilates instructors. I am Khadijah. I brought Pilates to 
+                Kuwait. I am the founder and the owner of Julles Studio.
+            </p>
+        </div>
+        
+        <div class="col-md-4 text-center" data-aos="fade-left" data-aos-duration="1200">
+            <div class="hero-image-anim-wrap">
+                <img src="images/newherimg.png" class="img-fluid secherimg" alt="Khadijah - Julles Studio">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!-- her2 -->
+  <div class="container py-5 secpadbg">
+    <div class="sectext2">
+      <p>Women feel seen, safe and genuinely taken care of; they get rid of their pains and reach their goals whether
+        its strength, flexibility, or destress. Julles is an exclusive place for women who carry a lot on their
+        shoulders - looking after everyone except for themselves. </p>
+      <p>Women in Julles arrive early and stay after class to unwind. They connect with other women or enjoy quiet time
+        alone drinking coffee or tea.</p>
+    </div>
+    <div class="secbtn text-center">
+      <a href="#" class="header-btn2">Book your first class, start the transformation</a>
+    </div>
+    <p class="text-center seccaltext pt-3"><a href="tel:+96566010678">Or Call us on +965 66010678</a></p>
+  </div>
+
+  <!-- Pain points of women - when they hear this - it resonates: -->
+<div class="container secpainbg" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="painsectext">Pain points of women - when they hear this - it resonates:</h2>
+    
+    <div class="text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200">
+        <img src="images/newherbbg.png" class="img-fluid secimg2new" alt="Pain Relief Context">
+    </div>
+
+    <div class="row pt-4">
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+            <p>Are you stressed out?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <p>Do you have a lot on your shoulders?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+            <p>Looking after everyone except yourself?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+            <p>Are you fed up with Dr. visits and taking medication?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+            <p>Are you tired of physiotherapy without feeling and seeing results?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+            <p>The knee pain, back pain and neck pain does not fade away?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+            <p>Do you exercise every day in a big gym and still do not see results?</p>
+            <hr class="sechrbg">
+        </div>
+        
+        <div class="col-md-4 col-sm-6 seccolbg" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+            <p>Are you tired of the loud music in the big gyms?</p>
+            <hr class="sechrbg">
+        </div>
+
+    </div>
+    
+    <h2 class="painsectext2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+        Do you want the instructor to watch every move you do in class to ensure correct performance and ensuring your safety?
+    </h2>
+</div>
+
+  <!-- Why did other approaches fail? -->
+<div class="container secpainbg2">
+    <div class="row align-items-center">
+        
+        <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+            <div class="solution-img-wrap">
+                <img src="images/newotherimg.png" class="img-fluid secbobg" alt="Why Julles Studio">
+            </div>
+        </div>
+
+        <div class="col-md-8" data-aos="fade-left" data-aos-duration="1200">
+            
+            <div class="problem-block">
+                <h2 class="secditext">Why did other approaches fail?</h2>
+                <ul class="secintbg custom-list-fail">
+                    <li data-aos="fade-left" data-aos-delay="100">Intimidating gyms, and intimidating machines without having an instructor to guide her through every move.</li>
+                    <li data-aos="fade-left" data-aos-delay="200">Unlimited membership adds pressure on her to attend every day, and makes her feel she failed when she could not commit to the unlimited access.</li>
+                    <li data-aos="fade-left" data-aos-delay="300">Lack of supervision during classes, lack of knowledge and expertise from the instructors and the woman does not feel safe.</li>
+                </ul>
+            </div>
+
+            <div class="pt-4 solution-block">
+                <h2 class="secditext gold-highlight-title">Solution:</h2>
+                <ul class="secintbg custom-list-success">
+                    <li data-aos="fade-left" data-aos-delay="400">Where women feel seen, and restored.</li>
+                    <li data-aos="fade-left" data-aos-delay="500">Women receive personal guidance in a safe, supportive environment where the exercise is gentle yet effective.</li>
+                    <li data-aos="fade-left" data-aos-delay="600">Julles is a place where she can arrive early and stay after to have her coffee or tea in a quiet place - to focus on herself, to reset and connect with women like herself.</li>
+                    <li data-aos="fade-left" data-aos-delay="700">Women in Julles are supervised and guided from the moment she walks in the studio, and during the Pilates classes even if it's a group class, and she will receive real corrections and modifications.</li>
+                    <li data-aos="fade-left" data-aos-delay="800">Women in Julles reach their goals through a monthly membership with specific number of visits that suits their lifestyle - without pressure.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+  <!-- Methodology -->
+<div class="container secpainbg3">
+    <h2 class="methodology-title" data-aos="fade-up" data-aos-duration="1000">Methodology</h2>
+
+    <div class="methodology-grid">
+
+        <div class="methodology-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="card-img-box">
+                <img src="images/Methodologyimg1.png" alt="Settle The Nervous System">
+            </div>
+            <div class="card-content">
+                <h3>Settle The Nervous System Description</h3>
+                <p>Create a calm, safe start so her body stops bracing and "locking up." We achieve this through the initial intake, understanding her goals and any injuries, prescribing a beginners class that involves breathing and activation of deep muscles.</p>
+            </div>
+        </div>
+
+        <div class="methodology-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="card-img-box">
+                <img src="images/Methodologyimg2.png" alt="Decompress & Align">
+            </div>
+            <div class="card-content">
+                <h3>Decompress & Align Description</h3>
+                <p>Releasing tight muscles, and strengthening the weak ones. Through Pilates reformer we release tight areas (neck, shoulders, back) and start rebuilding the ideal posture.</p>
+            </div>
+        </div>
+
+        <div class="methodology-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <div class="card-img-box">
+                <img src="images/Methodologyimg3.png" alt="Core That Holds">
+            </div>
+            <div class="card-content">
+                <h3>Core That Holds Description</h3>
+                <p>We strengthen the deep core muscles, so her posture doesn't collapse the moment she's tired or stressed.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!-- About Khadijah -->
+<div class="container py-5 secpadbg custom-about-section">
+    <div class="row align-items-center about-section-wrapper">
+
+        <div class="col-md-6 animate-left-box">
+            <div class="about-text-col">
+                <h2 class="about-title">About Khadijah</h2>
+                <h4 class="about-subtitle">Julles Studio since 2005.</h4>
+                <p class="about-desc">
+                    Instructor Trainer for <a href="https://www.merrithew.com" target="_blank">www.merrithew.com</a>.
+                    Certified STOTT PILATES Instructor all equipment. Certified Injuries and Special
+                    Population (shoulder, cancer rehab, osteoporosis, pre and postnatal). Certified
+                    Total Barre. Certified aerobics, kettlebells, TRX, spinning, BOSU, circuit
+                    training and many more.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 animate-right-box">
+            <div class="video-thumbnail-container">
+                <img src="images/vodeimg.png" alt="About Khadijah - Pilates Training" class="img-fluid about-video-img">
+                
+                <div class="video-play-btn animated-pulse-btn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="#60382B" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+  <!-- Testimonials -->
+  <div class="container py-5 testimonial-section">
+    <h2 class="testimonial-main-title text-center mb-5">Testimonials</h2>
+
+    <div class="owl-carousel owl-theme testimonial-slider">
+
+      <div class="item">
+        <div class="testimonial-content-box text-center" dir="rtl">
+          <p class="testimonial-text">
+            على كثر ما اشتركت في نوادي...معاكم قاعدة احصل نتيجه. والتنوع في الكالسات عرفت شنو احتاج أركز عليه، وعرفت كل
+            تمرين اشلون يفيدني.
+          </p>
+          <h5 class="client-name mt-4">Natasha Oakley</h5>
+          <span class="client-handle">natashaoakley</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="testimonial-content-box text-center" dir="rtl">
+          <p class="testimonial-text">
+            على كثر ما اشتركت في نوادي...معاكم قاعدة احصل نتيجه. والتنوع في الكالسات عرفت شنو احتاج أركز عليه، وعرفت كل
+            تمرين اشلون يفيدني.
+          </p>
+          <h5 class="client-name mt-4">Natasha Oakley</h5>
+          <span class="client-handle">natashaoakley</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Intro Offers -->
+<div class="container-fluid intro-offers-section py-5">
+  <div class="container">
+
+    <h2 class="offers-main-title text-center mb-5" data-aos="fade-down" data-aos-duration="1000">Intro Offers</h2>
+
+    <div class="row g-4 justify-content-center mb-5">
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div class="offer-card text-center position-relative">
+          <span class="offer-badge">BEST VALUE: SAVE 60%</span>
+          <h3 class="offer-price">KD 45</h3>
+          <p class="offer-text">for three pilates classes valid for two weeks</p>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+        <div class="offer-card text-center d-flex flex-column justify-content-center">
+          <h3 class="offer-price">KD 90</h3>
+          <p class="offer-text">for three private classes valid for two weeks</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000">
+      <div class="col-12 text-center">
+        <a href="tel:+96566010678" class="contact-gold-btn">
+          Contact us <strong>+965 66 010 678</strong>
+        </a>
+        <p class="limited-spaces-text mt-3">spaces are limited.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- FAQ’s -->
+<div class="container py-5 faq-section">
+  <h2 class="faq-main-title text-center mb-5" data-aos="fade-down" data-aos-duration="1000">FAQ's</h2>
+
+  <div class="faq-accordion-wrapper" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+
+    <div class="faq-item active">
+      <div class="faq-header">
+        <span class="faq-question">I have an injury (neck, back, or knee). Is Pilates safe for me?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-body" style="display: block;">
+        <p class="faq-answer">
+          Yes. Pilates is gentle on the joints and focuses on controlled, safe movement. We offer classes clearly
+          labeled for beginners and injured clients, and our instructors guide you to move safely.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-header">
+        <span class="faq-question">I've never done Pilates before. Can beginners join?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-body">
+        <p class="faq-answer">
+          Yes, absolutely! Our beginner classes are designed specifically for those with no prior experience. We break
+          down every movement step-by-step.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-header">
+        <span class="faq-question">Will the instructor watch and guide me during class?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-body">
+        <p class="faq-answer">
+          Yes, our instructors provide close supervision and personal corrections throughout the class to ensure your
+          posture is perfect and safe.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-header">
+        <span class="faq-question">I'm afraid of the Pilates machines. What if I don't know how to use them?</span>
+        <span class="faq-icon"></span>
+      </div>
+      <div class="faq-body">
+        <p class="faq-answer">
+          There's no need to worry. Our team will introduce you to the reformer and other machines, setting them up
+          properly for your body before you start.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- footer -->
+<footer class="footer-section-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center py-5">
+                <div class="footer-logo-box">
+                    <img src="images/main-logo.png" alt="Julles Logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-gold-bar"></div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/settings.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true /* एनिमेशन सिर्फ एक बार होगा जब यूजर स्क्रॉल करके आएगा */
+    });
+</script>
+  <script>
+    $(document).ready(function () {
+      $('.testimonial-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        rtl: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        smartSpeed: 800,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      });
+    });
+
+
+    $(document).ready(function () {
+      $('.faq-header').click(function () {
+        var currentItem = $(this).parent('.faq-item');
+
+        // अगर क्लिक किया हुआ आइटम पहले से खुला है, तो उसे बंद करें
+        if (currentItem.hasClass('active')) {
+          currentItem.removeClass('active');
+          $(this).next('.faq-body').slideUp(300);
+        } else {
+          // बाकी खुले हुए सभी आइटम्स को बंद करें
+          $('.faq-item').removeClass('active');
+          $('.faq-body').slideUp(300);
+
+          // सिर्फ करंट आइटम को खोलें
+          currentItem.addClass('active');
+          $(this).next('.faq-body').slideDown(300);
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // loder-start
+    window.addEventListener("load", function () {
+      document.getElementById("pageloader").style.display = "none";
+    });
+    // loder-end
+
+  </script>
+
+
+  <!-- mouse hover imge -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const wrap = document.querySelector(".julles-method-wrap");
+      const container = document.querySelector(".method-float-images");
+
+      if (!wrap || !container) return;
+
+      const images = [
+        "images/plan-img1.png",
+        "images/plan-img2.png",
+        "images/plan-img3.png"
+      ];
+
+      let index = 0;
+      let lastTime = 0;
+
+      wrap.addEventListener("mousemove", (e) => {
+
+        const now = Date.now();
+        if (now - lastTime < 120) return; // control density
+        lastTime = now;
+
+        const rect = wrap.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const img = document.createElement("img");
+        img.src = images[index];
+        img.className = "method-trail-img";
+
+        img.style.left = x + "px";
+        img.style.top = y + "px";
+        img.style.rotate = (Math.random() * 14 - 7) + "deg";
+
+        container.appendChild(img);
+
+        index = (index + 1) % images.length;
+
+        setTimeout(() => img.remove(), 2000);
+      });
+
+    });
+  </script>
+
+
+</body>
+
+</html>
