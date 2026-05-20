@@ -608,6 +608,7 @@ hr.sechrbg {
 
 .testimonial-slider .owl-dots {
   margin-top: 40px !important;
+  text-align: center  !important;
 }
 
 .testimonial-slider .owl-dots .owl-dot {
